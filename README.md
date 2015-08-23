@@ -21,6 +21,6 @@ Select the socio-economic factors you want to examine and the relative graphs an
 
 ## Sources
 
-Source code for the project is available on the [GitHub]().
+Source code for the project is available on the [GitHub](https://github.com/HwaHueySoh/DataProducts_Proj).
 
-The presentation for the project can be found [here]().
+The presentation for the project can be found [here](https://github.com/HwaHueySoh/DataProducts_Proj/blob/master/DevDataProd_Swiss.Rpres).
