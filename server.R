@@ -18,7 +18,8 @@ shinyServer(
   
   function(input,output) {
     newdata <- reactive({
-      temp <- select(swiss, Fertility, input$indicator)
+      indicatorlist <- c("Fertility", input$indicator)
+      temp <- swiss[,indicatorlist]
       temp
     })
     
@@ -33,7 +34,7 @@ shinyServer(
       ggpairs(newswiss, lower = list(continuous = "smooth"), params = c(method = "loess"))
     })
     
-    output$coefficients <- renderUI({
+    output$coefficients <- renderTable({
       newswiss <- newdata()
       fit <- lm( Fertility ~ ., data = newswiss)
       

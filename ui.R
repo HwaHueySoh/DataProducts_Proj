@@ -20,9 +20,9 @@ shinyUI(pageWithSidebar(
     tabPanel("Fertility",
              h4("Choose the Socioeconomic Indicators on the left you want to model."),
              h2("Pairwise Plot"),
-             showOutput("pairplot", "highcharts"),
+             plotOutput("pairplot", "auto"),
              h2("Linear Model Coefficients"),
-             uiOutput("coefficients")
+             tableOutput("coefficients")
              
              )
     
