@@ -18,7 +18,11 @@ shinyServer(
   
   function(input,output) {
     newdata <- reactive({
-      indicatorlist <- c("Fertility", input$indicator)
+      if (length(input$indicator) < 1) {
+        indicatorlist <- c("Fertility", "Agriculture")
+      } else {
+        indicatorlist <- c("Fertility", input$indicator)
+      }
       temp <- swiss[,indicatorlist]
       temp
     })

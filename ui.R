@@ -20,19 +20,10 @@ shinyUI(pageWithSidebar(
     tabPanel("Fertility",
              h4("Choose the Socioeconomic Indicators on the left you want to model."),
              h2("Pairwise Plot"),
-             if (length(indicatorInput) <= 1){
-               h4("No indicators selected!")
-             }
-             else {
-               plotOutput("pairplot", "auto")
-             },
+             plotOutput("pairplot", "auto"),
              h2("Linear Model Coefficients"),
-             if (length(indicatorInput) <= 1){
-               h4("No indicators selected!")
-             } else {
              tableOutput("coefficients")
-             }
-             
+         
              )
     
     
