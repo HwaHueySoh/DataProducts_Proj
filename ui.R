@@ -1,8 +1,5 @@
-library(shiny)
-require(rCharts)
-#library(Hmisc)
-library(dplyr)
-library(markdown)
+library(rmarkdown)
+
 options(RCHART_LIB = 'highcharts')
 
 shinyUI(pageWithSidebar(

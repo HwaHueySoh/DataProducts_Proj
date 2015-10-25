@@ -1,12 +1,5 @@
-library(shiny)
-library(data.table)
-require(rCharts)
+
 library(GGally)
-library(ggplot2)
-library(Hmisc)
-library(dplyr)
-library(stringi)
-library(markdown)
 
 #load data
 data(swiss)
